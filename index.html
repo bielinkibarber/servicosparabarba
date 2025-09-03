@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bielinki Barber - Barba Impecável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#284703',
+                        secondary: '#4A701C',
+                        support: '#88B257',
+                        neutral1: '#434D36',
+                        neutral2: '#555D4C',
+                        background: '#F7F9F7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #284703 0%, #4A701C 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(40, 71, 3, 0.15); }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-background text-neutral1">
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Barba impecável no<br>
+                <span class="text-support">Bielinki Barber</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                Escolha a praticidade da Barba Simples ou a experiência completa da Barba Terapia
+            </p>
+        </div>
+    </section>
+
+    <!-- Comparativo dos Serviços -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary">Nossos Serviços</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card Barba Simples -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-gray-100">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">✂️</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Barba Simples</h3>
+                        <div class="text-3xl font-bold text-secondary mb-4">R$ 40,00</div>
+                        <p class="text-neutral2 mb-6">Ideal para quem busca praticidade no dia a dia.</p>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-neutral1">
+                            <span class="w-2 h-2 bg-support rounded-full mr-3"></span>
+                            Alinhamento básico da barba
+                        </li>
+                        <li class="flex items-center text-neutral1">
+                            <span class="w-2 h-2 bg-support rounded-full mr-3"></span>
+                            Acabamento rápido e objetivo
+                        </li>
+                        <li class="flex items-center text-neutral1">
+                            <span class="w-2 h-2 bg-support rounded-full mr-3"></span>
+                            Manutenção regular
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://wa.me/?text=Olá! Gostaria de agendar a Barba Simples (R$ 40). Qual a disponibilidade?" 
+                           class="inline-block bg-secondary hover:bg-primary text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md w-full">
+                            Agendar Barba Simples
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Barba Terapia -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-support relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-support text-white px-4 py-2 rounded-bl-2xl font-semibold">
+                        Recomendado
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl text-white">💆‍♂️</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Barba Terapia</h3>
+                        <div class="text-3xl font-bold text-primary mb-4">R$ 50,00</div>
+                        <p class="text-neutral2 mb-6">Cuidado extra para sua barba e pele.</p>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-neutral1">
+                            <span class="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                            Modelagem detalhada
+                        </li>
+                        <li class="flex items-center text-neutral1">
+                            <span class="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                            Hidratação com produtos premium
+                        </li>
+                        <li class="flex items-center text-neutral1">
+                            <span class="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                            Toalha quente para abrir os poros
+                        </li>
+                        <li class="flex items-center text-neutral1">
+                            <span class="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                            Sensação de barba mais macia e saudável
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="https://wa.me/?text=Olá! Gostaria de agendar a Barba Terapia (R$ 50). Qual a disponibilidade?" 
+                           class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md w-full">
+                            Agendar Barba Terapia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que escolher Barba Terapia -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-primary">Por que escolher a Barba Terapia?</h2>
+            <p class="text-xl text-neutral2 leading-relaxed">
+                Além de alinhar, você recebe um cuidado especial que trata dos fios e da pele. 
+                A Barba Terapia garante hidratação, conforto e resultado duradouro.
+            </p>
+        </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary">Como funciona</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl text-white">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Escolha o serviço</h3>
+                    <p class="text-neutral2">Barba Simples ou Barba Terapia</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl text-white">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Agende pelo WhatsApp</h3>
+                    <p class="text-neutral2">Rápido e prático</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-support rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl text-white">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Compareça no horário</h3>
+                    <p class="text-neutral2">Pontualidade garantida</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-neutral1 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-3xl text-white">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-primary">Aproveite seu atendimento premium</h3>
+                    <p class="text-neutral2">Experiência única</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://wa.me/?text=Olá! Gostaria de agendar um horário no Bielinki Barber. Qual a disponibilidade?" 
+                   class="inline-block bg-primary hover:bg-secondary text-white font-semibold px-10 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Agendar minha barba
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 text-primary">Onde estamos</h2>
+            <p class="text-xl text-neutral2 mb-8">Venha viver a experiência Bielinki Barber</p>
+            <a href="https://maps.app.goo.gl/ymphJQqePwGV1kRp6" 
+               target="_blank"
+               class="inline-block bg-support hover:bg-opacity-90 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                📍 Ver localização
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-primary">Perguntas Frequentes</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-primary">Qual a diferença principal?</h3>
+                    <p class="text-neutral2">A Barba Simples é prática e rápida. A Barba Terapia inclui hidratação e toalha quente, com acabamento mais completo.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3 text-primary">Quanto tempo dura cada serviço?</h3>
+                    <p class="text-neutral2">Barba Simples ~20min | Barba Terapia ~40min</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="gradient-bg text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-8">
+                <div class="flex justify-center space-x-8 mb-6">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-support">🔒</span>
+                        <span class="text-sm">Pagamento seguro</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-support">👨‍💼</span>
+                        <span class="text-sm">Atendimento profissional</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-support">✅</span>
+                        <span class="text-sm">Satisfação garantida</span>
+                    </div>
+                </div>
+                <p class="text-gray-300">© 2024 Bielinki Barber – Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animação de fade-in ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animação
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.8s ease';
+            observer.observe(section);
+        });
+
+        // Primeira seção já visível
+        document.querySelector('section').style.opacity = '1';
+        document.querySelector('section').style.transform = 'translateY(0)';
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979772e151eca197',t:'MTc1NjkyNTU5NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
